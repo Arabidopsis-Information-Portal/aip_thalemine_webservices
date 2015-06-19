@@ -1,6 +1,6 @@
 ---
 name: locus_gene_report
-version: 0.2
+version: 0.2.0
 description: "Given a valid AGI locus, return a simple textual gene report"
 url: https://api.araport.org/intermine/v0.4/
 icon: thalemine.png
