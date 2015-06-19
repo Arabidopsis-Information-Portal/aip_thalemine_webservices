@@ -26,9 +26,10 @@ def search(arg):
     query_body = query_body + '" code="A" /></query>'
 
     payload = {'format':'json', 'start':0, 'query':query_body }
-    
-    # Eating some of our own puppy chow here. Note that we only support unauth calls to api.araport.org in the 
-    # 0.3 release of ADAMA services 
+
+    # Eating some of our own puppy chow here. Note that we only support unauth calls to api.araport.org in the
+    # 0.4 release of ADAMA services
+    # route: https://apps.araport.org/thalemine/service
     r = requests.get('https://api.araport.org/intermine/v0.4/query/results', params=payload)
 
     if r.ok:
