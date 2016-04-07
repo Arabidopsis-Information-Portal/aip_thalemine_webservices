@@ -30,7 +30,7 @@ def search(arg):
     # Eating some of our own puppy chow here. Note that we only support unauth calls to api.araport.org in the
     # 0.4 release of ADAMA services
     # route: https://apps.araport.org/thalemine/service
-    r = requests.get('https://api.araport.org/intermine/v0.4/query/results', params=payload)
+    r = requests.get('https://apps.araport.org/thalemine/service/query/results', params=payload)
 
     if r.ok:
         r_json = r.json()
